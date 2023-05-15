@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pizarrón interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Tablero</h1>
+    </header>
+    <div id="container">
+      <canvas id="lienzo" width="800" height="600"></canvas>
+      <div id="container-botones">
+        <div id="botones-titulo">
+          <h2>Elige un color</h2>
+        </div>
+      <div id="botones-colores">
+        <button id="color-rojo"></button>
+        <button id="color-verde"></button>
+        <button id="color-azul"></button>
+        <button id="color-negro"></button>
+      </div>
+      <div id="botones">
+        <button id="limpiar">Limpiar</button>
+        <button id="descargar">Descargar</button>
+      </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
